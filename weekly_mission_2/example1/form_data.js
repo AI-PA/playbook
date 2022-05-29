@@ -1,3 +1,4 @@
+//Moldeo de informacion de las difernetes redes sociales o apps.  
 // Twitter
 const  user_twitter= {
     user_baner:" ",
@@ -36,3 +37,29 @@ const hashtag_twitter ={
     twitet_data: "52m",
     message:"...~ #ThorLoveAndThunder ~... "
 }
+// Modela de obtenicion de datos de Facebook. 
+const user_facebook= {
+    direction: "https://www.facebook.com/alan.paz/XXXX",
+    user_baner: "image.jpg", 
+    user_img: "image.png",
+    name: "Alan Paz", 
+    nickname: "AI-PA", 
+    number_friends: "163 Friends.", 
+    studies: "Studies at ~~~",
+    love_life: "Single", 
+    joined: "May 2016", 
+    follower:"570 people", 
+    social_media: [
+        "Twitter: @aipa02",
+        "Instragram: @alan_paz" 
+    ],
+    genelarinfo: function(){
+        return `
+        direction: ${this.direction}, 
+        name: ${this.name}, 
+        user_name: ${this.nickname}`
+    }
+}
+console.log("User info: "+user_facebook.genelarinfo())
+console.log("\n")
+console.log("Social media: \n \t"+user_facebook.social_media)
