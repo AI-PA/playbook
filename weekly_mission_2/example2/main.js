@@ -82,3 +82,9 @@ let all_excercises= explorers.reduce((acc, my_explorer_in_list) => acc + my_expl
 console.log("los ejercicios completados de los explorers es de: "+ all_excercises)
 
 console.log("Ejercicio 2.7")
+let explorer_fronted_finished = explorers.some(item => item.mission.fronted.isFinished, true)
+console.log(explorer_fronted_finished)
+
+console.log("Ejercicio 2.8")
+let explorer_onboarding_finished = explorers.every(item => item.mission.onboarding.isFinished, true)
+console.log(explorer_onboarding_finished)
